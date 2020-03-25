@@ -17,8 +17,19 @@ FaceLivenessRecognition
 │  ├─ readme.md
 │  ├─ recognize.py
 │  ├─ SSDModels
+│  │  ├─ deploy.prototxt
+│  │  └─ res10_300x300_ssd_iter_140000.caffemodel
 │  ├─ train.py
 │  ├─ utilities
+│  │  ├─ convenience.py
+│  │  ├─ paths.py
+│  │  ├─ video_utilities
+│  │  │  ├─ filestream.py
+│  │  │  ├─ streamfromcam.py
+│  │  │  ├─ videostream.py
+│  │  │  └─ __init__.py
+│  │  └─ __init__.py
+│  ├─ Video
 │  └─ Videos
 ├─ readme.md
 ├─ requirements.txt
