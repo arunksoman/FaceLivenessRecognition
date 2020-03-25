@@ -57,3 +57,11 @@ import keras
 ```
 
 If these things not throwing any error our virtual environment is ready for doing this project. If this throws some error like <span style="color: red">**DLL file missing**</span> please contact me.
+
+## Dataset Preparation
+
+1. Run **capture_video.py** file. After running this file you can see your face on a window. You have to move your face back and forth as well as change your angle of face infront of camera. it will save your video on the folder named **Videos in avi format**.
+2. Copy that video to your mobile phone. Play that video before your camera while running same program(**capture_video.py**). Do not forgot to <span style="color:red">**write/ notedown names of those files.**</span>
+3. Now the video played from your phone is a kind of fake image since your live appearance is not before your camera. So Now we have to create our dataset using these steps.
+4. For more accuracy you can use different camera sensors (say camera of your mobile phone) in order to capture video. Then you have to store those videos on your folder Videos(notedown this video as real). Then Play this video on phone and capture that video using **capture_video.py** script. 
+5. Another ways to improve accuracy is you have to choose diffrent lighting conditions for taking those videos as well as people with diffrent skin tones. We are using a shallow convolutional neural network, so our each class(Real/ Fake) can have upto 8k-10k images.

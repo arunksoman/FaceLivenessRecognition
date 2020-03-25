@@ -13,7 +13,7 @@ os.path.join joins the strings correctly as a path structure.
 
 """
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-VIDEO_DIR = os.path.join(BASE_DIR, "Video")
+VIDEO_DIR = os.path.join(BASE_DIR, "Videos")
 if not os.path.exists(VIDEO_DIR):
     os.mkdir(VIDEO_DIR)
 
