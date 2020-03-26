@@ -17,7 +17,9 @@ import pickle
 import cv2
 import os
 
-# construct the argument parser and parse the arguments
+# These are the variables used for store name of our own model.
+# After executing this program you can see a model.json file which
+#  has architecture of our model like we scene in deploy prototxt
 model = "liveness.model"
 label_encoder = "le.pickle"
 plot = "plot.png"
