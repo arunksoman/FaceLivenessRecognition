@@ -9,7 +9,7 @@ import cv2
 from configurations import *
 
 
-model = "liveness.model"
+model_name = "liveness.model"
 label_encoder = "le.pickle"
 
 # load our serialized face detector from disk
@@ -18,7 +18,7 @@ net = cv2.dnn.readNetFromCaffe(PROTXT_PATH, CAFFEMODEL_PATH)
 
 # load the liveness detector model and label encoder from disk
 print("[INFO] loading liveness detector...")
-model = load_model(model)
+model = load_model(model_name)
 le = pickle.loads(open(label_encoder, "rb").read())
 
 # initialize the video stream and allow the camera sensor to warmup
