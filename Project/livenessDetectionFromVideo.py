@@ -66,6 +66,8 @@ while True:
 			# extract the face ROI and then preproces it in the exact
 			# same manner as our training data
 			face = frame[startY:endY, startX:endX]
+			if len(face) == 0:
+				continue
 			face = cv2.resize(face, (32, 32))
 			face = face.astype("float") / 255.0
 			face = img_to_array(face)

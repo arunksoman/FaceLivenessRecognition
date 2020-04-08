@@ -1,7 +1,7 @@
 from configurations import *
 import glob
 import cv2
-from time import perf_counter
+from time import perf_counter, sleep
 
 # Performance counter(perf_counter()) usually used for benchmarking our program.
 # Using performance counter we can measure time taken by the program to run in seconds.
@@ -9,7 +9,7 @@ from time import perf_counter
 start = perf_counter()
 
 # print(dir(os)) # Check whether the file os module getting import from configurations
-
+sleep(4)
 cap = cv2.VideoCapture(0)
 
 videos = glob.glob(VIDEO_DIR + "/*.avi")
@@ -44,7 +44,7 @@ while(cap.isOpened()):
     """
 
     cv2.waitKey(1)
-    if (finish - start) > 16:
+    if (finish - start) > 25:
         break
 out.release()
 cap.release()

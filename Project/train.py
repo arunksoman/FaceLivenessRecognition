@@ -20,7 +20,7 @@ import os
 # These are the variables used for store name of our own model.
 # After executing this program you can see a model.json file which
 #  has architecture of our model like we scene in deploy prototxt
-model = "liveness.model"
+model_name = "liveness.model"
 label_encoder = "le.pickle"
 plot = "plot.png"
 
@@ -89,8 +89,8 @@ print(classification_report(testY.argmax(axis=1),
 	predictions.argmax(axis=1), target_names=le.classes_))
 
 # save the network to disk
-print("[INFO] serializing network to '{}'...".format(model))
-model.save(model)
+print("[INFO] serializing network to '{}'...".format(model_name))
+model.save(model_name)
 
 # save the label encoder to disk
 f = open(label_encoder, "wb")
